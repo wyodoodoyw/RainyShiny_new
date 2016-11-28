@@ -25,7 +25,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="250"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="YO5-6c-kzR">
-                                        <rect key="frame" x="0.0" y="0.0" width="147" height="250"/>
+                                        <rect key="frame" x="8" y="0.0" width="147" height="250"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="November 2, 2016" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aQU-J5-vgL">
                                                 <rect key="frame" x="0.0" y="0.0" width="147" height="83.5"/>
@@ -48,9 +48,9 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="eOU-86-BNI">
-                                        <rect key="frame" x="200" y="20" width="120" height="230"/>
+                                        <rect key="frame" x="192" y="20" width="120" height="230"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="MJV-Qq-3q2">
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Rain" translatesAutoresizingMaskIntoConstraints="NO" id="MJV-Qq-3q2">
                                                 <rect key="frame" x="0.0" y="0.0" width="120" height="120"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="120" id="Smg-7m-rGY"/>
@@ -71,18 +71,19 @@
                                     <constraint firstItem="eOU-86-BNI" firstAttribute="top" secondItem="Ltp-GJ-LUL" secondAttribute="top" constant="20" id="5O9-Zn-obD"/>
                                     <constraint firstAttribute="height" constant="250" id="IaA-v7-MGV"/>
                                     <constraint firstAttribute="bottom" secondItem="YO5-6c-kzR" secondAttribute="bottom" id="Vaa-6j-DH1"/>
-                                    <constraint firstAttribute="trailing" secondItem="eOU-86-BNI" secondAttribute="trailing" id="gSH-CC-oA0"/>
-                                    <constraint firstItem="YO5-6c-kzR" firstAttribute="leading" secondItem="Ltp-GJ-LUL" secondAttribute="leading" id="jwR-zA-HWJ"/>
+                                    <constraint firstAttribute="trailing" secondItem="eOU-86-BNI" secondAttribute="trailing" constant="8" id="gSH-CC-oA0"/>
+                                    <constraint firstItem="YO5-6c-kzR" firstAttribute="leading" secondItem="Ltp-GJ-LUL" secondAttribute="leading" constant="8" id="jwR-zA-HWJ"/>
                                     <constraint firstAttribute="bottom" secondItem="eOU-86-BNI" secondAttribute="bottom" id="kCB-q0-KxQ"/>
                                     <constraint firstItem="YO5-6c-kzR" firstAttribute="top" secondItem="Ltp-GJ-LUL" secondAttribute="top" id="rtv-AH-UOa"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="250" id="zZK-sX-b5r"/>
                                 </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="Ltp-GJ-LUL" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="C66-R6-aVk"/>
-                            <constraint firstAttribute="trailing" secondItem="Ltp-GJ-LUL" secondAttribute="trailing" id="oHH-Dd-sKu"/>
-                            <constraint firstItem="Ltp-GJ-LUL" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="uJl-ej-mFU"/>
+                            <constraint firstItem="Ltp-GJ-LUL" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="BcX-2X-j38"/>
+                            <constraint firstItem="Ltp-GJ-LUL" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="R0X-h0-4hs"/>
+                            <constraint firstAttribute="trailing" secondItem="Ltp-GJ-LUL" secondAttribute="trailing" id="wyo-pP-H4A"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -91,4 +92,7 @@
             <point key="canvasLocation" x="80.625" y="80.281690140845072"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Rain" width="92" height="92"/>
+    </resources>
 </document>
