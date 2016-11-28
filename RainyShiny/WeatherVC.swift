@@ -21,15 +21,14 @@ class WeatherVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     @IBOutlet weak var tableView: UITableView!
     
     // tableView IBOutlets
-    @IBOutlet weak var tvDateLabel: UILabel!
-    @IBOutlet weak var tvHighTemp: UILabel!
-    @IBOutlet weak var tvWeather: UILabel!
-    @IBOutlet weak var tvLowTemp: UILabel!
-    @IBOutlet weak var tvImage: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
        
+        tableView.delegate = self
+        tableView.dataSource = self
+        
+        print(CURRENT_WEATHER_URL)
     }
     
     // Table View Delegate Functions
@@ -43,7 +42,8 @@ class WeatherVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        return UITableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "weatherCell", for: indexPath)
+        return cell
     }
 }
 

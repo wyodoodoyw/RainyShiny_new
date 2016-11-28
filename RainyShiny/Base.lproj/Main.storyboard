@@ -79,11 +79,11 @@
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="250" id="zZK-sX-b5r"/>
                                 </constraints>
                             </view>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="THJ-wd-VKx">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="80" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="THJ-wd-VKx">
                                 <rect key="frame" x="0.0" y="250" width="320" height="318"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="80" id="P4j-lz-4qo">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="weatherCell" rowHeight="80" id="P4j-lz-4qo">
                                         <rect key="frame" x="0.0" y="28" width="320" height="80"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="P4j-lz-4qo" id="3kM-N8-9ag">
@@ -169,6 +169,7 @@
                                                 <constraint firstItem="nSE-p4-1wz" firstAttribute="top" secondItem="3kM-N8-9ag" secondAttribute="topMargin" constant="8" id="wdb-OG-q4I"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -191,11 +192,6 @@
                         <outlet property="currentWeatherLabel" destination="UII-ao-lQp" id="Gzh-hB-5bh"/>
                         <outlet property="dateLabel" destination="aQU-J5-vgL" id="I4L-pD-0GX"/>
                         <outlet property="tableView" destination="THJ-wd-VKx" id="b0H-Lb-SJQ"/>
-                        <outlet property="tvDateLabel" destination="sBS-cP-jpu" id="yaj-Qw-e0u"/>
-                        <outlet property="tvHighTemp" destination="fEp-Bf-hGl" id="7dO-Kq-zri"/>
-                        <outlet property="tvImage" destination="F7G-ey-7tf" id="qib-Iv-cbn"/>
-                        <outlet property="tvLowTemp" destination="NnT-H0-wGY" id="kSL-bC-m5K"/>
-                        <outlet property="tvWeather" destination="UZv-PY-XPW" id="7Qq-bW-K9j"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
