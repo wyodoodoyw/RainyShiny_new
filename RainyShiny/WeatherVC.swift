@@ -22,13 +22,18 @@ class WeatherVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     // tableView IBOutlets
     
+    // currentWeather
+    var currentWeather = CurrentWeather()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
        
         tableView.delegate = self
         tableView.dataSource = self
         
-        print(CURRENT_WEATHER_URL)
+        currentWeather.downloadWeatherDetails {
+            // Setup UI to load downloaded data
+        }
     }
     
     // Table View Delegate Functions
