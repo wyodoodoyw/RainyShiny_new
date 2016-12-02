@@ -22,5 +22,5 @@ let MODE = "&mode=json"
 
 typealias DownloadComplete = () -> ()
 
-let CURRENT_WEATHER_URL = "\(BASE_URL)\(LATITUDE)43.55\(LONGITUDE)-80.25\(APP_ID)\(API_KEY)"
-let FORECAST_WEATHER_URL = "\(FORECAST_BASE_URL)\(LATITUDE)43.55\(LONGITUDE)-80.25\(COUNT)\(MODE)\(APP_ID)\(API_KEY)"
+let CURRENT_WEATHER_URL = "\(BASE_URL)\(LATITUDE)\(Location.sharedInstance.latitude!)\(LONGITUDE)\(Location.sharedInstance.longitude!)\(APP_ID)\(API_KEY)"
+let FORECAST_WEATHER_URL = "\(FORECAST_BASE_URL)\(LATITUDE)\(Location.sharedInstance.latitude!)\(LONGITUDE)\(Location.sharedInstance.longitude!)\(COUNT)\(MODE)\(APP_ID)\(API_KEY)"
